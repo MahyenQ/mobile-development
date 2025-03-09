@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
+}
+
+h4 {
+    text-align: left;
+}
+
+.para > p {
+    text-align: left;
+    font-size: 60px;
+    color: rgb(159, 155, 155);
+}
+
+.image {
+    border-radius: 5%;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #008080;
+}
+
+.firstsection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sec .para {
+    margin-bottom: 10px;
+}
+
+.sec .para h3 {
+    font-size: 1.5rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: left;
+    padding: 5%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer div {
+    padding: 10px;
+}
+
+.footer h3 {
+    font-size: 1.3rem; 
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none; /*para quitar los puntos de lista*/
+}
+
+.footer li {
+    font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+
+    .firstsection {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0%;
+        margin: 5%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .image {
+        align-items: center;
+        width: 80%;
+    }
+
+    .para > p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
