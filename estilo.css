@@ -14,11 +14,12 @@ body {
 
 header {
     text-align: left;
-    padding: 1px 50px;
+    padding: 1px 100px;
 }
 
 h4 {
     text-align: left;
+    margin-top: 5%;
 }
 
 .para > p {
