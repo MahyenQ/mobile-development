@@ -29,20 +29,20 @@ h4 {
 }
 
 .image {
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 header h1 { /*encabezado*/
-    font-size: 5rem;
+    font-size: 4rem;
     color: #008080;
 }
 
 .firstsection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px; /*espacio entre el texto y las imagenes*/
-    padding: 20px;
-    padding: 1px 300px;
+    gap: 150px; /*espacio entre el texto y las imagenes*/
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .sec {
@@ -54,7 +54,7 @@ header h1 { /*encabezado*/
 }
 
 .sec .para { /*espacio entre la ultima imagen y el footer*/
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 h3 { 
@@ -72,16 +72,15 @@ footer {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: auto;
     flex-wrap: wrap;
 }
 
-.footer div { 
-    padding: 10px; /*espacio entre el contendio de footer*/
+footer h2 {
+    font-size: 1.5em;
 }
 
 .footer h3 {
-    font-size: 1.3rem; 
+    font-size: 1rem; 
     margin-bottom: 10px;
 }
 
@@ -99,16 +98,18 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 0%;
         margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     header h1 {
         font-size: 3rem;
+        margin: ;
     }
 
     .image {
-        width: 80%;
+        width: 100%;
     }
 
     .text {
