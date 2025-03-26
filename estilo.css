@@ -70,9 +70,9 @@ footer {
 
 .footer { /*para el contenido que está dentro del footer excepto el encabezado*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 900px;
-    flex-wrap: wrap;
 }
 
 footer h2 {
@@ -90,6 +90,12 @@ footer h2 {
 
 .footer li {
     font-size: 0.7rem; /*para el contenido que esta dentro de h3 de footer*/
+}
+
+.hi {
+  flex: 20;
+  min-width: 200px; /* asegura que las columnas tengan espacio mínimo */
+  padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -115,7 +121,24 @@ footer h2 {
     .text {
         font-size: 30px;
     }
-}
+
+    .footer {
+        max-width: 500px;
+    }
+    
+    .hi:nth-child(3), /* "Support" */
+    .hi:nth-child(4)  /* "Company" */ {
+      order: 2; /* Mover estas secciones debajo */
+    }
+  
+    .hi:nth-child(1), /* "Product" */
+    .hi:nth-child(2)  /* "Platform" */ {
+      order: 1; /* Mantener estas secciones arriba */
+    }
+  }
+  
+
+
 
 
 
